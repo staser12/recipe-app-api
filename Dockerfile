@@ -7,6 +7,7 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 RUN mkdir /app
+RUN mkdir /test
 WORKDIR /app
 COPY ./app /app
 
